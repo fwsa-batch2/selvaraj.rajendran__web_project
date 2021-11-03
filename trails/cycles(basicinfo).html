@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> basic information</title>
+<style>
+h1{
+  font-size:40px;
+  font-style: oblique;
+}
+</style>
+<style>
+h2{
+  font-size:80px;
+  font-style: oblique;
+}
+</style>
+</style>
+<style>
+table,th,td{
+  border-style: hidden;
+  border-spacing: 10px;
+  border-color: black;
+}
+</style>
+<style>
+.button{
+  border: none;
+  color: blue;
+  padding: 5px 25px;
+  text-align: center;
+  font-size: 200px
+  font-style:oblique;
+  margin: 5px 10px;
+  cursor: pointer;
+   }
+   .button1{
+     background-color: white;
+     color: black;
+     border: 2px solid #4CAF50;
+     border-radius: 0%;
+   }
+   .button1:hover{
+     background-color: #4CAF50;
+     color: white;
+   }
+   .button2{
+     background-color: white;
+     color: black;
+     border: 2px solid red;
+     border-radius: 0%;
+   }
+   .button2:hover{
+     background-color: red;
+     color: white;
+   }
+   .button3{
+     background-color: white;
+     color: black;
+     border: 1px  solid blue;
+     border-radius: 0%;
+     padding: 3px 86px;
+   }
+   .button3:hover{
+     background-color:darkblue;
+     color:white;
+    }
+</style>
+</head>
+<body bgcolor="orange">
+          <center>
+               <h2 style="color:black"><u>  ORANGE CYCLES </u></h2>
+               <h3 style="color:white">CRASHING is part of CYCLING<BR> as<BR> CRYING is part of LOVE...</h3>
+               <h1 style="color:white"> <u>sign up </u></h1>
+           </center>
+           <center>
+          <form>
+                <table style="width:200px">
+
+                <tr><th style="color:white"> DOB </th><td><input type="date" id="datemax" name="datemax" max="2018-01-01"> </td></tr>
+                <tr><th style="color:white"> ph Number</th><td><input type="text" name="number" maxlength="10"> </td></tr>
+                <tr><th style="color:white"> GENDER:</th><td> <input type="radio" id="male" name="GENDER" value="male">
+                                          <label for="male">MALE</label></td></tr>
+                                            <tr><th></th><td><input type="radio" id="female"  name="GENDER" value="female">
+                                          <label for="female">FEMALE</label></td></tr>
+               </table>
+           </form>
+
+           <button class="button button1"> sumit&nbsp;</button>
+           <button onclick="document.location='cycles(signup).html'"class="button button2"> cancel </button><br>
+           <button class="button button3"> Home</button>
+
+          <p style="color:white">Already have a account? <a href="cycles(login).html" target="blank">&nbsp;log in </a></p>
+
+
+        </center>
+</body>
+</html>
