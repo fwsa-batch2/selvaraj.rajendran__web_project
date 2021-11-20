@@ -4,53 +4,166 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Orange Cycle</title>
     <style>
-    button{
-      border: 5px solid white;
-      background-color: black;
-      color:white;
-      padding: 20px 100px;
+      @import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+      }
+      section{
+        position:relative;
+        width: 100%;
+        min-height: 100vh;
+        padding: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color:black;
+      }
+      header{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        padding: 20px 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+      }
+      
+     header .logo{
+       position: relative;
+       max-width: 100px;
+       border-top: 2px orangered solid;
+       border-radius: 50px;
+     }
+     
+     header ul{
+       list-style: none;
+       position: relative;
+       display: flex;
+     }
+     header ul li a{
+       font-size: 1.5em;
+       display: inline-block;
+       color:black;
+       font-weight: 300;
+       margin-left: 40px;
+       text-decoration: none;
+       transition: 1s;
+      
+     }
+     header ul li a:hover{
+      color: orangered;
+      transition: .5s;
+      transform: translatey(10px);
+      
+     }
+     .info{
+       position: relative;
+       width: 100%;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+    
+     }
+     .info .textbox{
+       position: relative;
+       max-width: 600px;
 
-      font-size: 20px;
-      border-radius: 90px;
-    }
-    button:hover{
-     background-color: white;
-     color: black;
-     border: 5px solid black;
-     font-size: 20px;
-    }
-img{
-  padding-left: 20%;
-  transition: 3s;
-}
-img:hover{
-padding-left: 80%;
-  transition: 3s;
-}
-h6{
-  font-size:10px;
-}
+     }
+     .info .textbox h2{
+       color: orange;
+       font-size: 4em;
+       line-height: 2em;
+       font-weight: 500;
+     }
+     .info .textbox h1{
+       font-weight: 500;
+     }
+     .info .textbox p span{
+       color: orange;
+     }
+     .info .textbox p {
+       line-height: 1.5em;
+       color: blanchedalmond;
+     }
+     .info .textbox a{
+       text-decoration: none;
+       display: inline-block;
+       background-color: orange;
+       padding: 8px 20px;
+       letter-spacing: 1px;
+       color: black;
+       border-radius: 40px;
+     }
+     .info .textbox a:hover{
+       background-color: lavenderblush;
+       color: orange;
+     }
+     }
+     .info .cou{
+       display: flex;
+       width: 600px;
+       justify-content: flex-end;
+       padding-left: 50px;
+       margin-top: 20px;
+     }
+     .backcir{
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background-color:white;
+       clip-path:circle(650px at right);
+     }
+     
+     footer{
+       text-align: right;
+     }
+
     </style>
   </head>
-  <body bgcolor="orange">
-    <center>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-  <button onclick="document.location='cycles(home).html'"><span style="color:orange"> ORANGE</span> CYCLES<h6>click to visit</h6></button>
-<br> </center><img src="images/og1.png" height="80px" width="80px">
-<center>!DON'T TOUCH!<br>THE CYCLE </center>
-
+  <body>
+    <section>
+      <div class="backcir"></div>
+      <header>
+        <a href="#"><img src="images/og1.png" class="logo"></a>
+        <ul>
+          <li> <a href="#"> <i class="fa fa-home"> HOME</i></a></li>
+          <li> <a href="#"> &#9786; HELP </a></li>
+          <li> <a href="#"> &#9990; CONTACT US </a></li>
+        </ul>
+      </header>
+      <div class="info">
+        <div class="textbox">
+          <h2>ORANGE CYCLES</h2>
+          <p> Welcome to the <span>ORANGE</span> CYCLES.<br>
+              We have a wide range of products to supply to all cycling requirements<br>
+              we will always strive to promote healthy lifestyles as & <br>
+              we continue to improve our product offerings & customer service.<br>
+              <span>ORANGE</span> CYCLES has many quality international cycle brands<br>
+             which provides Road Bikes, MTB and hybrid range of cycles.</p><br>
+             <a href="#">Learn More</a>
+             <br><br><br>
+             <h1 style="color: blanchedalmond;">&#10077; CRASHING is part of CYCLING as<BR> CRYING is part of LOVE... &#10078;</h1>
+        </div>
+             <div class="cou">
+               <img src="images/cobi.webp" height="350px" width="auto">
+             </div>
+             
+         
+        
+      </div>
+    </section>
   </body>
+  <hr><br><br>
+  <footer>&#169; Allrightsreserved@orangecycles.com</footer>
+  <br><br>
 </html>
