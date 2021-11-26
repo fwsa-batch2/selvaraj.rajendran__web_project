@@ -42,9 +42,6 @@
        border-top: 2px orangered solid;
        border-radius: 50px;
      }
-     header .logo:hover{
-       
-     }
      
      header ul{
        list-style: none;
@@ -85,6 +82,7 @@
        font-size: 4em;
        line-height: 2em;
        font-weight: 500;
+       letter-spacing: 2px;
      }
      .info .textbox h1{
        font-weight: 500;
@@ -108,7 +106,7 @@
      .info .textbox a:hover{
        background-color: lavenderblush;
        color: orange;
-     }
+       
      }
      .info .cou{
        display: flex;
@@ -116,6 +114,14 @@
        justify-content: flex-end;
        padding-left: 50px;
        margin-top: 20px;
+     }
+     .info .cou img{
+       transition: 5s;
+     }
+     .info .cou img:hover{
+       transform:rotateZ(10deg);
+       transition: 5s;
+      
      }
      .backcir{
        position: absolute;
@@ -125,6 +131,9 @@
        height: 100%;
        background-image: linear-gradient(white,orange);
        clip-path:circle(650px at right);
+     }
+     .backcir:hover{
+      transform:rotateX(180deg)
      }
      
      footer{
@@ -139,7 +148,7 @@
       <header>
         <a href="#"><img src="images/og1.png" class="logo"></a>
         <ul>
-          <li> <a href="#"> <i class="fa fa-home"> HOME</i></a></li>
+          <li> <a href="home.html"> <i class="fa fa-home"> HOME</i></a></li>
           <li> <a href="#"> &#9786; HELP </a></li>
           <li> <a href="#"> &#9990; CONTACT US </a></li>
         </ul>
