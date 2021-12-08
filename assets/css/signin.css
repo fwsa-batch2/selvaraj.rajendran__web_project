@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+      }
+  .logo{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 5;
+  }
+  .background{
+    height: 80%;
+    position: relative;
+  }
+  .background img{
+    /* filter: blur(5px); */
+    position: relative;
+    height: 80%;
+  }
+  .signinform{
+    position: absolute;
+    width: 500px;
+    height: auto;
+    margin-top: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid orange;
+    box-shadow: 3px 5px 30px grey;
+
+
+  }
+  .signinform h1{
+    text-align: center;
+    color: orange;
+    font-size: 50px;
+    /* border-bottom: 2px solid black; */
+  }
+  .signinform h2{
+    text-align: center;
+    color: orange;
+    font-size: 16px;
+    padding-bottom: 40px;
+  }
+  .signinform h3{
+    color: orange;
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+  .signinform  a{
+    color: white;
+    text-decoration:none;
+    margin-left: 5px;
+
+
+  }
+  .signinform a:hover{
+    color: blue;
+
+  }
+ .signinform form{
+   padding: 0 40px;
+   box-sizing: border-box;
+ }
+ form .field{
+   position: relative;
+   border-bottom: 2px solid white;
+   margin: 30px 0;
+ }
+.field input{
+  width: 100%;
+  color: white;
+  padding: 0 5px;
+  height:40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+
+}
+
+.downbox{
+  display: flex;
+  position: relative;
+}
+.sumit input{
+  padding: 5px 20px;
+  margin-bottom: 30px;
+  border: 2px black solid;
+background-color: orange;
+font-weight: bold;
+border-top-left-radius: 20px;
+border-bottom-right-radius: 20px;
+}
+.clr{
+  padding: 5px 20px;
+  border: 2px black solid;
+  margin-left: 30px;
+  background-color: orange;
+  font-weight: bold;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.sumit input:hover{
+  color: white;
+  background: black;
+  border: 2px white solid;
+}
+.clr:hover{
+  color: black;
+  background-color: red;
+}
+footer{
+  text-align: right;
+}
