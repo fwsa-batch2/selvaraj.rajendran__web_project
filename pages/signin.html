@@ -1,53 +1,64 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-      <link rel="stylesheet" type="text/css" href="/home/selvarajrajendran/orangecycleshowroomapp-ui/assets/css/signin.css">
-    <title>Signin</title>
-  </head>
-  <body>
-    <div class="background">
-      <img src="/home/selvarajrajendran/orangecycleshowroomapp-ui/assets/images/mark.gif" alt="background img" height="100%" width="100%">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="./../assets/css/signin.css">
+  <title>Signin</title>
+</head>
+
+<body>
+  <div class="background">
+    <img src="./../assets/images/mark.gif" alt="background img"
+      height="100%" width="100%">
+  </div>
+  <div class="logo">
+    <a href="#"> <img src="./../assets/images/logo1.png" alt="logo"
+        height="100px"></a>
+  </div>
+
+  <div class="signinform">
+    <h1>SIGN UP!</h1>
+    <h2>Make an account</h2>
+    <form onsubmit="getdata()">
+      <div class="field">
+        <input id="NAME" type="text" name="NAME" placeholder="Username" required>
+
       </div>
-    <div class="logo">
-    <a href="#"> <img  src="/home/selvarajrajendran/orangecycleshowroomapp-ui/assets/images/logo.png" alt="logo" height="100px"></a>
-    </div>
+      <div class="field">
+        <input id="mail" type="email" name="email" placeholder="Email" required>
 
-<div class="signinform">
-  <h1>SIGN UP!</h1>
-  <h2>Make an account</h2>
-  <form class="" action="index.html" method="post">
-     <div class="field">
-       <input id="NAME" type="text" value="" name="NAME" placeholder="Username" required>
-
-     </div>
-     <div class="field">
-       <input id="mail" type="email" value="" name="email" placeholder="Email" required>
-
-     </div>
-     <div class="field">
-       <input id="password" type="password" value="" name="password" minlength="8" maxlength="10" placeholder="Password" required>
-
-     </div>
-     <div class="field">
-       <input id="Confirmpass" type="password" value="" name="Confirm password" minlength="8" maxlength="10" placeholder="Confirm Password" required>
-      
-     </div>
-     <div class="downbox">
-     <div class="sumit">
-       <input type="submit" value="Signup">
-     </div>
-      <div class="cler">
-         <button   class="clr" type="button" name="clear" value=""> Clear </button>
       </div>
-       </div>
-  </form>
-  <h3>Already have an account? &nbsp; <span style="font-size:25px">&#10153;</span><a href="#"> Login </a></h3>
+      <div class="field">
+        <input id="password" type="password" name="password" minlength="8" maxlength="10" placeholder="Create Password"
+          required>
 
-</div>
-<script type="text/javascript" src="/home/selvarajrajendran/work/signi">
+      </div>
+      <div class="field">
+        <input id="Confirmpass" type="password" name="Confirm password" minlength="8" maxlength="10"
+          placeholder="Confirm Password" required>
 
-</script>
-  </body>
-  <footer>&#169; Allrightsreserved@orangecycles.com</footer>
+      </div>
+      <div class="show">
+        <input id="box" type="checkbox" checked="false" onchange="passshow()"> Show Password
+      </div>
+
+      <div class="downbox">
+        <div class="sumit">
+          <input type="submit" value="Signup">
+        </div>
+        <div class="cler">
+          <button class="clr" type="button" name="clear" value="" onclick="clr()"> Clear </button>
+        </div>
+      </div>
+    </form>
+    <h3>Already have an account? &nbsp; <span style="font-size:25px">&#10153;</span><a href="#"> Login </a></h3>
+
+  </div>
+  <script type="text/javascript" src="./../assets/js/signin.js">
+
+  </script>
+</body>
+<footer>&#169; Allrightsreserved@orangecycles.com</footer>
+
 </html>
