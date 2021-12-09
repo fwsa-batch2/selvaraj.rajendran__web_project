@@ -2,6 +2,11 @@ let array = [];
 
 function getdata() {
   event.preventDefault();
+   let data =  JSON.parse(localStorage.getItem("customerList"));
+   if(data == null){
+     localStorage.setItem("customerList" , JSON.stringify([]))
+   }
+   
   let username = document.getElementById("NAME").value;
   let email = document.getElementById("mail").value;
   let password = document.getElementById("password").value;
