@@ -30,7 +30,7 @@ function getdata() {
     let detailInString = JSON.stringify(array);
     let ab = localStorage.setItem("customerList", detailInString);
     console.log("passwords matched");
-    window.location.href = "./../../index.html"
+    window.location.href = "../index.html"
   } else {
     alert("password doen't match")
     pasclr();
