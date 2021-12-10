@@ -20,7 +20,7 @@
   <div class="signinform">
     <h1>SIGN UP!</h1>
     <h2>Make an account</h2>
-    <form onsubmit="getdata()">
+    <form onsubmit="getdata()" autocomplete="off">
       <div class="field">
         <input id="NAME" type="text" name="NAME" placeholder="Username" required>
 
@@ -40,7 +40,7 @@
 
       </div>
       <div class="show">
-        <input id="box" type="checkbox" checked="false" onchange="passshow()"> Show Password
+        <input id="box" type="checkbox" value="false" onchange="passshow()"> Show Password
       </div>
 
       <div class="downbox">

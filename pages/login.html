@@ -1,85 +1,64 @@
-<html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
 <head>
-<title> login </title>
-<style>
-a:link{
-   color: orange;
-}
-a:hover{
-  color: green;
-}
-</style>
-<style>
-h1{
-  font-size:40px;
-  font-style: oblique;
-}
-</style>
-<style>
-h2{
-  font-size:50px;
-  font-style: oblique;
-}
-</style>
-<style>
-body{
-  background: url(images/owbl.jpg);
-  background-repeat:no-repeat;
-  background-attachment: inherit;
-  background-size: cover;
-
-
-}
-</style>
-<style>
-table,th,td{
-  border-style: hidden;
-  border-spacing: 10px;
-  color: orange;
-}
-</style>
-<style>
-   .button1{
-     background-color: white;
-     color: black;
-     border: 2px solid black;
-     border-radius: 25px;
-     padding: 5px 78px;
-   }
-   .button1:hover{
-     background-color: orange;
-     color: black;
-   }
-   .button2{
-     background-color: white;
-     color: black;
-     border: 2px solid orange;
-     border-radius: 25px;
-     padding: 5px 50px;
-   }
-   .button2:hover{
-     background-color: orange;
-     color: black;
-   }
-</style>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="./../assets/css/signin.css">
+  <title>Signin</title>
 </head>
-<body bgcolor="white">
-           <center>
-               <h2 style="color:orange"><u>  ORANGE CYCLES </u></h2>
-               <h1 style="color:orange"> welcome </h1>
-           </center>
-           <center>
-          <form>
-                <table style="width:200px">
-                <tr><th align="left">Email <input type="Email" name="Email" placeholder="Email"> </th><td></td></tr>
-                <tr><th align="left"> Password <input type="Password" name="Password" placeholder="Password "> </th><td></td> </tr>
 
-               </table>
-               <p><a href="cycles(forgot).html" target="blank"> Forgot Password?</a>
-           </form>
+<body>
+  <div class="background">
+    <img src="./../assets/images/mark.gif" alt="background img"
+      height="100%" width="100%">
+  </div>
+  <div class="logo">
+    <a href="../index.html"> <img src="./../assets/images/logo1.png" alt="logo"
+        height="100px"></a>
+  </div>
 
-           <button  onclick="document.location='cycles(thank).html'"class="button button1"> Log in </button><br>
-           <button onclick="document.location='cycles(signup).html'" class="button button2"> Create account </button><br>
-        </center>
+  <div class="signinform">
+    <h1>SIGN UP!</h1>
+    <h2>Make an account</h2>
+    <form onsubmit="getdata()">
+      <div class="field">
+        <input id="NAME" type="text" name="NAME" placeholder="Username" required>
+
+      </div>
+      <div class="field">
+        <input id="mail" type="email" name="email" placeholder="Email" required>
+
+      </div>
+      <div class="field">
+        <input id="password" type="password" name="password" minlength="8" maxlength="10" placeholder="Create Password"
+          required>
+
+      </div>
+      <div class="field">
+        <input id="Confirmpass" type="password" name="Confirm password" minlength="8" maxlength="10"
+          placeholder="Confirm Password" required>
+
+      </div>
+      <div class="show">
+        <input id="box" type="checkbox" checked="false" onchange="passshow()"> Show Password
+      </div>
+
+      <div class="downbox">
+        <div class="sumit">
+          <input type="submit" value="Signup">
+        </div>
+        <div class="cler">
+          <button class="clr" type="button" name="clear" value="" onclick="clr()"> Clear </button>
+        </div>
+      </div>
+    </form>
+    <h3>Already have an account? &nbsp; <span style="font-size:25px">&#10153;</span><a href="#"> Login </a></h3>
+
+  </div>
+  <script type="text/javascript" src="./../assets/js/signin.js">
+
+  </script>
 </body>
+<footer>&#169; Allrightsreserved@orangecycles.com</footer>
+
 </html>
