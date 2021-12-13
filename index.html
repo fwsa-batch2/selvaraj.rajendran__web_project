@@ -38,22 +38,12 @@
         /* background-image:linear-gradient(to right, black, rgb(97, 93, 93)); */
 
       }
-      
-      .moving_cycle{
-        left: 10px;
-        top: 10px;
-
-      }
-      .moving_cycle:hover{
-        left: 200px;
-      }
-
+    
      header .logo{
        position: relative;
        max-width: 100px;
        border-top: 2px rgb(255, 69, 0) solid;
        border-radius: 50px;
-       
        pointer-events: none;
 
      }
@@ -117,10 +107,12 @@
        letter-spacing: 1px;
        color: black;
        border-radius: 40px;
+       border: 2px solid black;
      }
      .info .textbox a:hover{
-       background-color: lavenderblush;
+       background-color: black;
        color: orange;
+       border: 2px solid whitesmoke;
 
      }
      .info .cou{
@@ -154,7 +146,7 @@
      footer{
        text-align: right;
      }
-
+     
     </style>
   </head>
   <body>
@@ -163,11 +155,11 @@
      
       <div class="backcir"></div>
       <header>
-        <a href="#"><img src="assets/images/logo.png" class="logo"></a>
+        <img src="assets/images/logo.png" class="logo">
         <ul>
           <li> <a href="pages/cycles(home).html"> Home </i></a></li>
           <li> <a href="#">  Shop </a></li>
-          <li> <a href="/home/selvarajrajendran/orangecycleshowroomapp-ui/pages/signin.html"> Signup </a></li>
+          <li> <a href="./pages/register.html"> Signup </a></li>
           <li> <a href="#"> Login </a></li>
         </ul>
       </header>
