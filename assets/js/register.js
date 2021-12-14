@@ -100,13 +100,13 @@ function passshow() {
 
 function mailChecking(current_mail) {
 
-  const datalo = localStorage.getItem("customerList");
-  const checking  = JSON.parse(datalo);
-  console.log(checking);
+  const datalo = localStorage.getItem("customerList"); // datalo = null
+  const checking  = JSON.parse(datalo);                // checking = null
+  console.log(checking);                                // null
 
   let isExist = false;
 
-  for (let i = 0; i < checking.length; i++) {
+  for (let i = 0; i < checking.length; i++) {                 // i = 0 length
     const data1 = checking[i];
     
     console.log(data1)
@@ -123,3 +123,16 @@ function mailChecking(current_mail) {
   console.log(isExist)
   return isExist;
 }
+
+function onpageLoad(){
+  const users = localStorage.getItem("customerList");        //localstoarge = null
+  const customerList = JSON.parse(users);                   // customerList = null
+    console.log(customerList)
+  if(users != null){                                           // false 
+       array = users;
+       console.log(array)
+  } else{
+    localStorage.setItem("customerList",JSON.stringify([]));      // local storage key(customerlist) = []
+  }
+}
+onpageLoad();

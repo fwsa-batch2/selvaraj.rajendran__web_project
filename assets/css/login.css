@@ -11,68 +11,38 @@
     left: 10px;
     z-index: 5;
   }
-  .background{
-    height: 80%;
-    position: relative;
-  }
-  .background img{
-    /* filter: blur(5px); */
-    position: relative;
-    height: 80%;
-  }
-  .signinform{
+  
+  .loginform{
     position: absolute;
-    width: 500px;
+    width: auto;
+    top:30%;
+    margin-left: 150px;
     height: auto;
-    margin-top: 100px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 5px solid orange;
-    box-shadow: 3px 5px 30px grey;
-    
+    box-shadow: 0px 0px 10px rgb(12, 12, 12);
 
   }
-  .signinform h1{
+  .loginform h1{
     text-align: center;
-    color: orange;
+    color: black;
     font-size: 50px;
-    /* border-bottom: 2px solid black; */
-  }
-  .signinform h2{
-    text-align: center;
-    color: orange;
-    font-size: 16px;
-    padding-bottom: 40px;
-  }
-  .signinform h3{
-    color: orange;
-    margin-left: 20px;
-    margin-bottom: 10px;
-  }
-  .signinform  a{
-    color: white;
-    text-decoration:none;
-    margin-left: 5px;
-
-
-  }
-  .signinform a:hover{
-    color: blue;
+    font-weight: 500;
+    pointer-events: none;
     
   }
- .signinform form{
+  
+ .loginform form{
    padding: 0 40px;
    box-sizing: border-box;
  }
+
  form .field{
    position: relative;
-   border-bottom: 2px solid white;
+   border-bottom: 2px solid black;
    margin: 30px 0;
  }
 .field input{
   width: 100%;
-  color: white;
+  color:black;
   padding: 0 5px;
   height:40px;
   font-size: 16px;
@@ -82,44 +52,68 @@
 
 }
 
-.downbox{
-  display: flex;
-  position: relative;
-}
-.sumit input{
-  padding: 5px 20px;
-  margin-bottom: 30px;
-  border: 2px black solid;
-background-color: orange;
-font-weight: bold;
-border-top-left-radius: 20px;
-border-bottom-right-radius: 20px; 
-}
-.clr{
-  padding: 5px 20px;
-  border: 2px black solid;
-  margin-left: 30px;
-  background-color: orange;
-  font-weight: bold;
-  border-top-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-}
-.sumit input:hover{
+.submit{
+  width: 100%;
+  height: 50px;
   color: white;
-  background: green;
-  border: 2px white solid;
+  background-color:black;
+  border: 2px black solid;
+  border-radius: 30px ;
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 500;
 }
-.clr:hover{
+.submit:hover{
   color: black;
-  background-color: red;
-  border: 2px white solid;
+  background-color: orange;
+}
+.loginform h5{
+  margin-bottom: 30px;
+  text-align:center;
+}
+.loginform a{
+  text-decoration: none;
+  margin: 20px;
+  color:green;
+}
+.loginform a:hover{
+  color: white;
+  background-color: black;
+  padding: 5px;
+  border-radius: px ;
+}
+form h5{
+  color: white;
+}
+.innerimg{
+  position:absolute;
+  color:black;
+  font-size: 40px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 0 10px black;
+  right: 0;
+  top:30%;
+  padding: 30px;
+  margin-right: 30px;
+}
+.innerimg h6{
+  font-weight: 300;
+  color: white;
+}
+h6+a{
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+  padding: 5px 10px;
+ background-color: black;
+ border-radius:30px;
+ 
+}
+h6+a:hover{
+ color: black;
+ background-color: orange;
 }
 footer{
   text-align: right;
-}
-
-.show{
-  margin-bottom: 10px;
-  color: white;
-  padding-bottom: 10px;
 }

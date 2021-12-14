@@ -3,62 +3,38 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="./../assets/css/signin.css">
-  <title>Signin</title>
+  <link rel="stylesheet" type="text/css" href="./../assets/css/login.css">
+  <title>Login</title>
 </head>
 
 <body>
-  <div class="background">
-    <img src="./../assets/images/mark.gif" alt="background img"
-      height="100%" width="100%">
-  </div>
-  <div class="logo">
-    <a href="../index.html"> <img src="./../assets/images/logo1.png" alt="logo"
-        height="100px"></a>
-  </div>
+  <div class="background"> <img src="./../assets/images/flye.jpg" alt="background img" height="100%" width="100%"></div>
 
-  <div class="signinform">
-    <h1>SIGN UP!</h1>
-    <h2>Make an account</h2>
-    <form onsubmit="getdata()">
-      <div class="field">
-        <input id="NAME" type="text" name="NAME" placeholder="Username" required>
-
-      </div>
-      <div class="field">
-        <input id="mail" type="email" name="email" placeholder="Email" required>
-
-      </div>
-      <div class="field">
-        <input id="password" type="password" name="password" minlength="8" maxlength="10" placeholder="Create Password"
-          required>
-
-      </div>
-      <div class="field">
-        <input id="Confirmpass" type="password" name="Confirm password" minlength="8" maxlength="10"
-          placeholder="Confirm Password" required>
-
-      </div>
-      <div class="show">
-        <input id="box" type="checkbox" checked="false" onchange="passshow()"> Show Password
+  <div class="logo"><a href="../index.html"> <img src="./../assets/images/logo1.png" alt="logo" height="100px"></a> </div>
+ 
+  <div class="innerimg">
+     <p> Studies have shown that<br>
+       riding a bicycle everyday <br>
+       makes you more awsome than<br>
+        the general population</p>
+         <h6>  Don't have a account?</h6> <a href="./register.html"> Resgister </a>
       </div>
 
-      <div class="downbox">
-        <div class="sumit">
-          <input type="submit" value="Signup">
-        </div>
-        <div class="cler">
-          <button class="clr" type="button" name="clear" value="" onclick="clr()"> Clear </button>
-        </div>
-      </div>
+
+  <div class="loginform">
+    
+    <h1>Login</h1>
+  
+    <form>
+      <div class="field"><input id="mail" type="email" name="email" placeholder="Email" required></div>
+      <div class="field"><input id="password" type="password" name="password" minlength="8" maxlength="10" placeholder="Password" required></div>
+     <br><br><br> <button class="submit" type="submit">Login</button>       
+       <!-- <h5>Don't have a account?<a href="./register.html"> Sign up</a> </h5> -->
     </form>
-    <h3>Already have an account? &nbsp; <span style="font-size:25px">&#10153;</span><a href="#"> Login </a></h3>
-
-  </div>
+</div>
   <script type="text/javascript" src="./../assets/js/signin.js">
 
   </script>
 </body>
 <footer>&#169; Allrightsreserved@orangecycles.com</footer>
-
 </html>
