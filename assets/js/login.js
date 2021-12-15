@@ -18,7 +18,7 @@
 // //     const users = localStorage.getItem("customerList");  
 // //     const customerList = JSON.parse(users);  
 // //     let len = customerList.length;
-    
+
 
 // // }
 
@@ -61,28 +61,45 @@
 
 
 
-function submitHandler(){
+function submitHandler() {
 
-event.preventDefault();
-let loginMail = document.getElementById("mail").value;                //input from user
-let loginPassword = document.getElementById("password").value;         //input from user
 
-console.log(loginMail);
-console.log(loginPassword);
-  
+    event.preventDefault();
+    let loginMail = document.getElementById("mail").value;                //input from user
+    let loginPassword = document.getElementById("password").value;         //input from user
 
-let customerDetail = JSON.parse(localStorage.getItem("customerList"));       //data from local storage
+    console.log(loginMail);
+    console.log(loginPassword);
 
-len = customerDetail.length;                                                 // length of local storage
 
-console.log(customerDetail)
+    let customerDetail = JSON.parse(localStorage.getItem("customerList"));       //data from local storage
 
-for(i=0; i < len; i++){
-    let mail = customerDetail[i].email;
-    let pass = customerDetail[i].password;
 
-    console.log(mail);
-    console.log(pass);
+    if (customerDetail != null) {
+
+        console.log(customerDetail)
+        len = customerDetail.length;
+        for (i = 0; i < len; i++) {
+            let mail = customerDetail[i].email;
+            let pass = customerDetail[i].password;
+
+            console.log(mail);
+            console.log(pass);
+
+            if (loginMail == mail && loginPassword == pass) {
+                console.log(loginMail);
+                console.log(loginPassword);
+                alert("logged in successfully");
+                window.location.href ="./../index.html";
+
+            } else{
+                alert("invalid user id and password")
+            }
+
+        }
+    }else{
+        alert("invalid user")
+    }
 
 }
 
@@ -90,4 +107,5 @@ for(i=0; i < len; i++){
 
 
 
-}
+
+

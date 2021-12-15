@@ -7,6 +7,7 @@ function onpageLoad(){
        selva = customerList;
        console.log(selva)
   }
+
  
 }
 onpageLoad();
@@ -24,6 +25,8 @@ function getdata() {
     "password": password,
     "confirmPassword": confirmPassword
   }
+
+  
 
   const mail = mailChecking(email);
   console.log(mail);
@@ -112,7 +115,7 @@ function passshow() {
 function mailChecking(current_mail) {
 
   // const datalo = localStorage.getItem("customerList"); // datalo = null
-  // const checking  = JSON.parse(datalo);                // checking = null
+  // const selva  = JSON.parse(datalo);                // checking = null
   console.log(selva);                                // null
 
   let isExist = false;
