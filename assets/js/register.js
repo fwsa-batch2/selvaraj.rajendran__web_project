@@ -1,4 +1,15 @@
-let array = [];
+let selva = [];
+
+function onpageLoad(){
+  const customerList = JSON.parse(localStorage.getItem("customerList"));                   // customerList = null
+    console.log(customerList)
+  if(customerList != null){                                           // false 
+       selva = customerList;
+       console.log(selva)
+  }
+ 
+}
+onpageLoad();
 
 function getdata() {
   event.preventDefault();
@@ -26,8 +37,8 @@ function getdata() {
 
 
   if (isMatch) {
-    array.push(customerDetail);
-    let detailInString = JSON.stringify(array);
+    selva.push(customerDetail);
+    let detailInString = JSON.stringify(selva);
     let ab = localStorage.setItem("customerList", detailInString);
     console.log("passwords matched");
     window.location.href = "login.html"
@@ -44,7 +55,7 @@ function render() {
   const customerList = JSON.parse(users);
 
   if (customerList) {
-    array = customerList;
+    selva = customerList;
   }
 
 }
@@ -100,14 +111,14 @@ function passshow() {
 
 function mailChecking(current_mail) {
 
-  const datalo = localStorage.getItem("customerList"); // datalo = null
-  const checking  = JSON.parse(datalo);                // checking = null
-  console.log(checking);                                // null
+  // const datalo = localStorage.getItem("customerList"); // datalo = null
+  // const checking  = JSON.parse(datalo);                // checking = null
+  console.log(selva);                                // null
 
   let isExist = false;
 
-  for (let i = 0; i < checking.length; i++) {                 // i = 0 length
-    const data1 = checking[i];
+  for (let i = 0; i < selva.length; i++) {                 // i = 0 length
+    const data1 = selva[i];
     
     console.log(data1)
     
@@ -124,15 +135,3 @@ function mailChecking(current_mail) {
   return isExist;
 }
 
-function onpageLoad(){
-  const users = localStorage.getItem("customerList");        //localstoarge = null
-  const customerList = JSON.parse(users);                   // customerList = null
-    console.log(customerList)
-  if(users != null){                                           // false 
-       array = users;
-       console.log(array)
-  } else{
-    localStorage.setItem("customerList",JSON.stringify([]));      // local storage key(customerlist) = []
-  }
-}
-onpageLoad();

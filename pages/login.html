@@ -25,14 +25,15 @@
     
     <h1>Login</h1>
   
-    <form>
-      <div class="field"><input id="mail" type="email" name="email" placeholder="Email" required></div>
-      <div class="field"><input id="password" type="password" name="password" minlength="8" maxlength="10" placeholder="Password" required></div>
-     <br><br><br> <button class="submit" type="submit">Login</button>       
+    <form onsubmit="submitHandler()">
+      <div class="field"><input id="mail" type="email" name="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required></div>
+      <div class="field"><input id="password" type="password" name="password" minlength="8" maxlength="10" placeholder="Password"  pattern="[A-Za-z0-9].{8,12}" required></div>
+     <br><br><br> 
+      <input type="submit" class="submit" value="Login">      
        <!-- <h5>Don't have a account?<a href="./register.html"> Sign up</a> </h5> -->
     </form>
 </div>
-  <script type="text/javascript" src="./../assets/js/signin.js">
+  <script type="text/javascript" src="./../assets/js/login.js">
 
   </script>
 </body>
