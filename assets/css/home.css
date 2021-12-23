@@ -104,13 +104,14 @@ header{
      font-size: 2rem;
      justify-content: space-between;
      margin-top: 60px;
-      
+      pointer-events: none;
  }
  .box .content h1{
    color:black;
    text-transform:uppercase;
     font-weight: 500;
     margin-top: 20px;
+    pointer-events: none;
  }
  .box .content h2{
      color: orange;
@@ -119,5 +120,19 @@ header{
      background-color: black;
      padding: 2px;
      padding-left: 5px;
+     pointer-events: none;
 
  }
+ .box .content .btn{
+     color:black;
+     padding-left: 2px;
+     font-size: 2rem;
+     border: 1px black solid;
+     transition: 1s;
+ }
+ .box .content .btn:hover{
+     color: white;
+    padding-left: 50%;
+    transition: 1s;
+ }
+ 
