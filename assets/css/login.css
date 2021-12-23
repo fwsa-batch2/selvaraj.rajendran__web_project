@@ -21,6 +21,10 @@
     box-shadow: 0px 0px 10px rgb(12, 12, 12);
 
   }
+   .background{
+     height: 700px;
+   }
+
   .loginform h1{
     text-align: center;
     color: black;
@@ -73,14 +77,14 @@
 }
 .loginform a{
   text-decoration: none;
-  margin: 20px;
-  color:green;
+  color:white;
+  margin-left: 30%;
+  
 }
 .loginform a:hover{
+  margin-left: 25%;
   color: white;
-  background-color: black;
-  padding: 5px;
-  border-radius: 4px ;
+  font-size: 20px
 }
 form h5{
   color: white;

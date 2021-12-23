@@ -1,18 +1,18 @@
 let selva = [];
-
 function onpageLoad(){
+  console.group("onpageLoad")
   const customerList = JSON.parse(localStorage.getItem("customerList"));                   // customerList = null
     console.log(customerList)
   if(customerList != null){                                           // false 
        selva = customerList;
-       console.log(selva)
+       console.log(selva);
+       console.groupEnd("onpageLoad");
   }
-
- 
 }
 onpageLoad();
 
 function getdata() {
+  console.group("getdata");
   event.preventDefault();
   let username = document.getElementById("NAME").value;
   let email = document.getElementById("mail").value;
@@ -49,18 +49,18 @@ function getdata() {
     alert("password doen't match")
     pasclr();
   }
-
+console.groupEnd();
 
 }
 function render() {
-
+console.group("render");
   const users = localStorage.getItem("customerList");
   const customerList = JSON.parse(users);
-
+console.table(customerList);
   if (customerList) {
     selva = customerList;
   }
-
+console.groupEnd();
 }
 
 render();
@@ -68,21 +68,26 @@ render();
 
 
 function passwordChecking() {
-
+console.group("passwordChecking");
   let isMatch = false;
 
 
   const pw = document.getElementById("password").value;
   const cpw = document.getElementById("Confirmpass").value;
-
-
+ console.log(pw);
+ console.log(cpw);
 
   if (pw == cpw) {
     isMatch = true;
+    console.log("password matched");
   } else {
     isMatch = false;
+    console.log("password mismatch");
+
   }
+  console.groupEnd();
   return isMatch;
+  
 }
 
 function clr() {
@@ -93,7 +98,10 @@ function clr() {
 }
 
 function pasclr() {
+  console.group("pasclr");
+  console.log("confirm password cleared automatically" )
   let confirmPassword = document.getElementById("Confirmpass").value = ""
+  console.groupEnd()
   return confirmPassword;
 }
 
@@ -102,18 +110,16 @@ function passshow() {
   if (checkbox.checked) {
     document.getElementById("password").type = "text";
     document.getElementById("Confirmpass").type = "text";
-    console.log("visible")
   } else {
     document.getElementById("password").type = "password";
     document.getElementById("Confirmpass").type = "password";
-    console.log("!visible")
   }
-
+console.groupEnd();
 }
 
 
 function mailChecking(current_mail) {
-
+console.group("mailChcking");
   // const datalo = localStorage.getItem("customerList"); // datalo = null
   // const selva  = JSON.parse(datalo);                // checking = null
   console.log(selva);                                // null
@@ -135,6 +141,7 @@ function mailChecking(current_mail) {
     }
   }
   console.log(isExist)
+  console.groupEnd();
   return isExist;
 }
 

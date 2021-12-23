@@ -1,39 +1,123 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
 *{
-    margin: 0;
-    padding: 0;
-    font-family:'poppins' ,sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+a {
+    text-decoration: none;
+    display:inline-block;
+}
+ul{
+    list-style: none;
 }
 body{
-    background-image: url(images/gb.jpg);
-    background-size: cover;
+    color: white;
+    background-color: black;
+}
+header{
+    height: 100px;
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    z-index: 100;
+}
+.logo{
+    pointer-events: none;
 }
 .topnav{
-    top: 10px;
-    left: 0%;
-    position: sticky;
-    text-align:right;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
 }
-.topnav ul {
-    top:0%;
-    list-style: none;
-    background-color:black;
-    height: 80px;
+.mainmenu{
+    display: flex;
+    pointer-events: visible;
 }
-.topnav ul li a{
-    display: block;
-    padding: 20px;
-    text-decoration: none;
-    float: right;
+.mainmenu li a{
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    color:white;
 }
+.mainmenu li a.active{
+    color:orange;
+    opacity: 1;
+}
+.mainmenu li {
+    margin-left: 84px;
+}
+.mainmenu li a:hover
+{
+    color:orange;
+    opacity: 1;
+}
+.sidemenu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.sidemenu li a i {
+    font-size: 2em;
+    color: white;
+    transition: .5s;
+}
+.sidemenu li{
+    margin-left: 30px;
+}
+.sidemenu li a i:hover{
+    transform: translateY(-5px);
+    color: orange;
+    transition: .5s;
+    
+}
+.mainpage{
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    margin-top: 100px;
+    color: black;
+}
+.box{
+    background-image: url(./../images/edited.jpg);
+    background-size: cover;
+    height: 800px;
+    width: 100%;
+    display: flex;
+    align-items:baseline;
+    justify-content: flex-end;
+    padding:30px;
+  
+}
+.box .content {
+   display: grid;
+ }
+ .box .content span{
+     font-size: 2rem;
+     justify-content: space-between;
+     margin-top: 60px;
+      
+ }
+ .box .content h1{
+   color:black;
+   text-transform:uppercase;
+    font-weight: 500;
+    margin-top: 20px;
+ }
+ .box .content h2{
+     color: orange;
+     font-size: 2rem;
+     text-transform: uppercase;
+     background-color: black;
+     padding: 2px;
+     padding-left: 5px;
 
-.topnav img{
-    top: 0;
-    left: 0%;
-    float: left;
-    height: 90px;
-    width: 90px;
-    border-top: 2px solid orangered;
-    border-radius: 40px;
-   margin: 10px;
-}
+ }
