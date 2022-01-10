@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+      }
+  .logo{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 5;
+  }
+
+  .forgotform{
+    position: absolute;
+    width: auto;
+    top:30%;
+    left: 40%;
+    height: auto;
+    box-shadow: 0px 0px 10px rgb(12, 12, 12);
+
+  }
+   .background{
+     height: 700px;
+   }
+
+  .forgotform h1{
+    text-align: center;
+    color: black;
+    font-size: 50px;
+    font-weight: 500;
+    pointer-events: none;
+    padding: 20px;
+
+  }
+
+ .forgotform form{
+   padding: 0 40px;
+   box-sizing: border-box;
+ }
+
+ form .field{
+   position: relative;
+   border-bottom: 2px solid black;
+   margin: 30px 0;
+ }
+.field input{
+  width: 100%;
+  color:white;
+  padding: 0 5px;
+  height:40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+
+}
+
+.submit{
+  width: 200px;
+  height: 50px;
+  color: white;
+  padding: 5px;
+  background-color:black;
+  border: 2px black solid;
+  border-radius: 30px ;
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.submit:hover{
+  color: black;
+  background-color: orange;
+}
+.forgotform h5{
+  margin-bottom: 30px;
+  text-align:center;
+}
+.forgotform a{
+  text-decoration: none;
+  color:white;
+  margin-left: 30%;
+
+}
+.forgotform a:hover{
+  margin-left: 25%;
+  color: white;
+  font-size: 20px
+}
+
+
+footer{
+  text-align: right;
+}

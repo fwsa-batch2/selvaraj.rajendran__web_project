@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="./../assets/css/forgot1.css">
+  <title>Login</title>
+</head>
+
+<body>
+  <div class="background"> <img src="./../assets/images/flye.jpg" alt="background img" height="100%" width="100%"></div>
+
+  <div class="logo"><a href="../index.html"> <img src="./../assets/images/logo1.png" alt="logo" height="100px"></a> </div>
+
+
+
+  <div class="forgotform">
+
+    <h1>Forgot Password</h1>
+
+    <form onsubmit="submitHandler()">
+      <div class="field"><input id="mail" type="email" name="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required></div>
+      <div class="field"><input id="password" type="password" name="password" minlength="8" maxlength="10" placeholder="last Password you remember"  pattern="[A-Za-z0-9].{8,12}" required></div>
+      <input type="submit" class="submit" value="submit">
+    </form>
+</div>
+
+</body>
+<footer>&#169; Allrightsreserved@orangecycles.com</footer>
+</html>
