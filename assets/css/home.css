@@ -80,9 +80,8 @@ header{
 }
 .mainpage{
     background-color: white;
-    height: 145vh;
+    height: 110vh;
     width: 100%;
-    margin-top: 100px;
     color: black;
 }
 .box{
@@ -99,6 +98,7 @@ header{
 }
 .box .content {
    display: grid;
+   margin-top: 100px;
  }
  .box .content span{
      font-size: 2rem;
@@ -138,43 +138,82 @@ header{
     transition: 1s;
  }
 
-/* <-----------------------footer---------------------> */
+/* <-----------------------.mainfooter---------------------> */
 
- footer{
+ .mainfooter{
      background-color: #545454;
      display: flex;
      padding: 20px;
      box-sizing: border-box;
  }
- footer span{
+ .mainfooter span{
      color: orange;
      font-size: 1.5em;
-     border-bottom: #545454 2px solid ;
      text-decoration: capitalize;
  }
- footer span:hover{
-    border-bottom: orange 2px solid ;
+.mainfooter span::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: orange;
+    display: block;
+    margin: auto;
+    transition: .5s;
+}
+.mainfooter span:hover::after{
+    width: 100%;
+}
 
- }
+.About::after,
+.follow::after,
+.info::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: orange;
+    display: block;
+    margin: auto;
+    transition: .5s;
+    top: 10px;
+}
+.About:hover::after,
+.follow:hover::after,
+.info:hover::after{
+    width: 100%;
+}
+
  .About,
  .Follow,
  .info{
      margin-left: 50px;
      font-size: 20px;
  }
- footer ul li {
+ .mainfooter ul li {
      font-size: 15px;
      margin: 10px;
      padding: 10px;
      transition: 2s;
  }
- footer .About ul li:hover{
+ .mainfooter .About ul li:hover{
      pointer-events: none;
      color: black;
  }
- footer ul li:hover{
+ .mainfooter ul li:hover{
      color: orange;
      transition: 1s;
+ }
+ .mainfooter ul li i{
+     font-size: 30px;
+ }
+ .mainfooter .facebook i{
+     color:blue;
+ }
+ .mainfooter .instagram i{
+     color: #cd486b;
+
+ }
+ .mainfooter .twitter i{
+     color: #00acee;
  }
  .bottomcredits{
      color: black;
@@ -182,4 +221,26 @@ header{
      text-align: center;
      font-weight: 500;
  }
-/* <-----------------------footer---------------------> */
+ 
+ 
+/* <-----------------------.mainfooter---------------------> */
+
+.shopbox{
+    width: 98%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    background: white;
+}
+.shopbox .firstimg{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    width: 30%;
+    height: 500px;
+}
+.shopbox .firstimg img{
+    width: 100%;
+}

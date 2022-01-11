@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../assets/css/gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>Gallery</title>
+</head>
+<body>
+   <header>
+       <div class="logo">
+   <a href=""> <img src="./../assets/images/logo1.png" alt="logo" height="60"></a>
+</div>
+    <div class="topnav"></div>
+    <ul class="mainmenu">
+        <li><a href="./home.html"> Home   </a></li>
+        <li><a href="#"> Shop   </a></li>
+        <li><a href="./bikes.html"> Bikes   </a></li>
+        <li><a href="#"  class="active"> Gallery   </a></li>
+        <li><a href="#"> About us   </a></li>
+    </ul>
+    <ul class="sidemenu">
+    <li><a href="#"><i class='bx bx-search'></i> </a></li>
+    <li><a href="#"> <i class='bx bxs-cart-alt'></i></a></li>
+    <li><a href="#"><i class='bx bxs-user-circle'></i></a></li>
+    <li><a href="#"> <i class='bx bx-shuffle'></i></a></li>
+    </ul>
+   </header>
+
+   <section class="gallery">
+       <div id="container">
+           <div id="inner_container">
+               <img id="imageview" height="500px" width="100%"/>
+               <div id="button_container">
+                   <button onclick="randomimage()"> next </button>
+               </div>
+           </div>
+       </div>
+   </section>
+
+<script src="./../assets/js/gallery.js"></script>
+</body>
+<footer>
+       <div class="mainfooter">
+    <div class="About">
+        <span>  About Orangecycles </span>
+          <!-- <p> Lorem Ipsum es simplemente<br> el texto de relleno de las ...</p> -->
+          <br>
+         <ul>
+             <li> <i class='bx bxs-map'></i> Address<br>
+                  No 3. 13th street,<br>
+                100ft road,<br>
+            velachery<br>
+        chennai-42<br>
+    </li>
+    <li> <i class='bx bxs-phone'></i>  Phone<br>
+        +91 9176701208
+    </li>
+    <li>
+        <i class='bx bxl-gmail'></i> Gmail <br>
+        Orangecycles@gmail.com
+    </li>
+        </ul>
+
+    </div>
+     
+    <div class="Follow">
+        <span>  Follow us </span>
+        <ul>
+            <li class="facebook"> <i class='bx bxl-facebook-circle'></i> facebook</li>
+            <li class="instagram"> <i class='bx bxl-instagram'></i>  instagram </li>
+            <li class="twitter">  <i class='bx bxl-twitter'></i>  twitter </li>
+            <!-- <li> <i class='bx bxl-whatsapp'></i> whatsapp  </li> -->
+        </ul>
+    </div>
+    <div class="info">
+        <span>Information</span>
+        <ul>
+            <li> About us </li>
+            <li> Contact us</li>
+            <li> Gallery</li>
+            <li> shop</li>
+            <li> bikes</li>
+        </ul>
+    </div>
+</div>
+    
+<div class="bottomcredits">
+    2022 &#169; Orangecycles by <span style="color: orange;"> selva</span>
+</div>
+</footer>
+</html>
