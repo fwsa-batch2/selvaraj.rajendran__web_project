@@ -82,7 +82,7 @@ header{
     background-color: white;
     height: 110vh;
     width: 100%;
-    color: black;
+    color: black; 
 }
 .box{
     background-image: url(./../images/background.jpg);

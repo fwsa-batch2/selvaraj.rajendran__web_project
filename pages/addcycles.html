@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>addcycle</title>
+    <style>
+.container{
+width: 100%;
+height: auto;
+display: grid;
+justify-content: center;
+margin-top: 100px;
+}
+.cycle{
+    display: grid;
+    position: relative;
+    padding: 10px;
+}
+.container input{
+    border: none;
+    width: 100%;
+    height: auto;
+    font-size: 1.2em;
+    padding: 5px;
+
+}
+.container label{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 5px;
+}
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+a {
+    text-decoration: none;
+    display:inline-block;
+}
+ul{
+    list-style: none;
+}
+body{
+    color: black;
+}
+header{
+    height: 60px;
+    position: fixed; 
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    z-index: 100;
+}
+.logo{
+    pointer-events: none;
+}
+.topnav{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+.mainmenu{
+    display: flex;
+    pointer-events: visible;
+}
+.mainmenu li a{
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    color:white;
+}
+.mainmenu li a.active{
+    color:orange;
+    opacity: 1;
+}
+.mainmenu li {
+    margin-left: 84px;
+}
+.mainmenu li a:hover
+{
+    color:orange;
+    opacity: 1;
+}
+.sidemenu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.sidemenu li a i {
+    font-size: 2em;
+    color: white;
+    transition: .5s;
+}
+.sidemenu li{
+    margin-left: 30px;
+}
+.sidemenu li a i:hover{
+    transform: translateY(-5px);
+    color: orange;
+    transition: .5s;
+    
+}
+h1{
+    text-transform: capitalize;
+}
+
+</style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+    <a href=""> <img src="./../assets/images/logo1.png" alt="logo" height="60"></a>
+ </div>
+     <div class="topnav"></div>
+     <ul class="mainmenu">
+         <li><a href="./home.html"> Home   </a></li>
+         <li><a href="#"> Shop   </a></li>
+         <li><a href="#"> Bikes   </a></li>
+         <li><a href="./gallery.html"> Gallery   </a></li>
+         <li><a href="#"> About us   </a></li>
+         <li> <a href="#" class="active"> Add cycle </a></li>
+     </ul>
+     <ul class="sidemenu">
+     <li><a href="#"><i class='bx bx-search'></i> </a></li>
+     <li><a href="#"> <i class='bx bxs-cart-alt'></i></a></li>
+     <li><a href="#"><i class='bx bxs-user-circle'></i></a></li>
+     <li><a href="#"> <i class='bx bx-shuffle'></i></a></li>
+     </ul>
+    </header>
+    <div class="container">
+        <h1> Add cycle</h1>
+<form onsubmit="addcycle(event)">
+    <div class="cycle">
+    <label for="cycleName"> cycleName </label>
+    <input type="text" id="cycleName" placeholder="cycle name" pattern="[A-Za-z0-9].{2,12}"  Title="please fill cycle name" autofocus required>
+</div>
+<div class="cycle">
+    <label for="cycleType"> cycleType</label>
+    <input type="text" id="cycleType" placeholder="cycleType"pattern="[A-Za-z0-9].{2,12}"  Title="please fill cycle type" required > 
+</div>
+<div class="cycle">
+    <label for="price"> price</label>
+    <input type="number" id="price" placeholder="price" pattern="[0-9]" min="2" maxlength="7" required>
+</div>
+<div class="cycle">
+    <label for="cycleimg"> cycle image </label>
+    <input type="url" id="cycleimg" placeholder="image url" title="please paste the url of image" required>
+</div>
+    <input type="submit" value="submit"> 
+    <input type="reset">
+</form>
+</div>
+<script>
+     
+    let cycleData = [];
+    function onpageload(){
+        const cycleLoaddata = JSON.parse(localStorage.getItem("cycleList"));
+        if(cycleLoaddata != null){
+        cycleData = cycleLoaddata;
+        }
+    }
+
+    function addcycle(event){
+        event.preventDefault();
+
+        let nameOfTheCycle = document.getElementById("cycleName").value;
+        let typeOfTheCycle = document.getElementById("cycleType").value;
+        let priceValue = document.getElementById("price").value;
+        let imageOfCycle = document.getElementById("cycleimg").value;
+
+        const cycleDetails = {
+            "cycleName":nameOfTheCycle,
+            "cycleType":typeOfTheCycle,
+            "price":priceValue,
+            "image":imageOfCycle,
+        }
+        cycleData.push(cycleDetails);
+        localStorage.setItem("cycleList",JSON.stringify(cycleData));
+        window.location.href = "./bikes.html"
+    }
+onpageload();   
+   
+</script>
+</body>
+</html>
