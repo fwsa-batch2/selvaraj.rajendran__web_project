@@ -212,6 +212,8 @@ border-radius: 5px;
 }
 .image img{
     border: 1px solid black;
+    height: 200px;
+    width: 150px;
 }
 .container{
     display: flex;
