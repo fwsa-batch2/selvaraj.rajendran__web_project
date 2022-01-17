@@ -55,9 +55,11 @@
 * cycle name and cycle type must contain more than 2 characters and cannot be empty.
 * price must conatain moe than 2 numbers and a max of 7 numbers.
 * image must contain url link of the iamge
-* If everything is validated, redirect to bikes page.
+* If everything is validated,details are stored in local storage, redirect to bikes page.
 
 ## List cycle
-get 
+details given in Add cycle page are displayed in bikes page.
+details stored in local storage are displayed.
+
 
 
