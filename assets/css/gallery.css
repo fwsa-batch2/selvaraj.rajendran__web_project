@@ -64,7 +64,7 @@ header{
     justify-content: center;
     
 }
-.sidemenu li a i {
+.sidemenu li a em {
     font-size: 2em;
     color: white;
     transition: .5s;
@@ -72,7 +72,7 @@ header{
 .sidemenu li{
     margin-left: 30px;
 }
-.sidemenu li a i:hover{
+.sidemenu li a em:hover{
     transform: translateY(-5px);
     color: orange;
     transition: .5s;
@@ -141,17 +141,17 @@ header{
     color: orange;
     transition: 1s;
 }
-.mainfooter ul li i{
+.mainfooter ul li em{
     font-size: 30px;
 }
-.mainfooter .facebook i{
+.mainfooter .facebook em{
     color:blue;
 }
-.mainfooter .instagram i{
+.mainfooter .instagram em{
     color: #cd486b;
 
 }
-.mainfooter .twitter i{
+.mainfooter .twitter em{
     color: #00acee;
 }
 .bottomcredits{
@@ -169,8 +169,8 @@ section{
     margin-top: 60px;
 }
 .gallery{
-    margin-top: 60px;
     margin: 20px;
+    margin-top: 60px;
     display: grid;
     
 }
