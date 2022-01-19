@@ -17,7 +17,7 @@ body{
 }
 header{
     height: 60px;
-    position: fixed; 
+    position: static    ; 
     left: 0%;
     top: 0%;
     width: 100%;
@@ -120,7 +120,7 @@ header{
     display: block;
     margin: auto;
     transition: .5s;
-    top: 10px;
+    top: 10px; 
 }
 .About:hover::after,
 .follow:hover::after,
@@ -167,7 +167,35 @@ section{
     align-items: center;
     justify-content: center;
     margin-top: 60px;
-
+}
+.gallery{
+    margin-top: 60px;
+    margin: 20px;
+    display: grid;
+    
+}
+.gallery img{
+    height: 500px;
+    width: 800px;
+    margin-top: 60px;
+}
+.gallery button{
+    padding: 10px 20px;
+    margin: 10px;
+    margin-left: 380px;
+    text-transform: capitalize;
+    color: orange;
+    background-color: black;
+    border: 2px orange double;
+}
+.gallery button:hover{
+    padding: 10px 20px;
+    margin: 10px;
+    margin-left: 380px;
+    text-transform: capitalize;
+    color: black;
+    background-color: orange;
+    border: 2px black double;
 }
 
 
