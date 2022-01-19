@@ -13,13 +13,13 @@ for(let i of bikes){
         <img src=\"${bicycleImg}\" alt="cycle" height="200px" width="150px">
         <div class="data1">
             <p>
-                Cycle Name: ${bicycleName}
+                 ${bicycleName}
             </p>
             <p>
-                Cycle Type: ${bicycleType}
+                 ${bicycleType}
             </p>
             <p>
-                Price: &#x20A8; ${bicyclePrice}
+                 &#x20A8; ${bicyclePrice}/-only
             </p>
         </div>
     </div>

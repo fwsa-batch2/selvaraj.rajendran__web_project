@@ -80,7 +80,7 @@ header{
 }
 .mainpage{
     background-color: white;
-    height: 110vh;
+    height: 145vh;
     width: 100%;
     color: black; 
 }
@@ -93,8 +93,6 @@ header{
     align-items:baseline;
     justify-content: flex-end;
     padding: 30px;
-    
-  
 }
 .box .content {
    display: grid;
@@ -114,7 +112,7 @@ header{
     pointer-events: none;
     margin-bottom: 20px;
  }
- .box .content h2{
+ .box .content p{
      color: orange;
      font-size: 2rem;
      text-transform: uppercase;
@@ -160,7 +158,7 @@ header{
     margin: auto;
     transition: .5s;
 }
-.mainfooter span:hover::after{
+.mainfooter span:hover::after {
     width: 100%;
 }
 
@@ -223,24 +221,106 @@ header{
  }
  
  
-/* <-----------------------.mainfooter---------------------> */
+/* <-----------------------.mainfooter ends---------------------> */
+
+/*<----------------------------section 2 ----------------------->*/
 
 .shopbox{
-    width: 98%;
-    margin: auto;
+    width: 100%;
     text-align: center;
-    padding-top: 50px;
     background: white;
+    position: relative;
+    padding: 50px;
+}
+.shopbox h1{
+    font-size: 60px;
+}
+.shopbox h4{
+    font-size: 20px;
+    text-decoration: underline;
+}
+.shopbox .bikes{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 .shopbox .firstimg{
-    flex-basis: 32%;
     border-radius: 10px;
     margin-bottom: 30px;
     position: relative;
     overflow: hidden;
-    width: 30%;
-    height: 500px;
+    width: 300px;
+    margin: 20px;
 }
 .shopbox .firstimg img{
     width: 100%;
+    height: 250px;
+}
+.layer{
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;  
+}
+.layer:hover{
+    background-color: rgba(20, 20, 30, 0.7);
+    
+}
+.layer h3,h2{
+    width: 100%;
+    color: white;
+    font-weight: 500;
+    font-size: 25px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    text-transform: capitalize;
+    opacity: 0;
+    transition: 1s;
+}
+.layer h4{
+    width: 100%;
+    color: white;
+    font-weight: 500;
+    font-size: 25px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    text-transform: capitalize;
+    opacity: 0;
+
+}
+.layer a{
+    color: black;
+}
+.layer:hover h4{
+    bottom: 35%;
+    opacity: 1;
+    background-color: orange;
+}
+.layer a:hover{
+    color: orange;
+    background-color:#3c3c3c;
+    width: 300px;
+    
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+    transition: 0.5s;
+}
+.firstimg:hover h2{
+opacity: 0;
+}
+.firstimg h2{
+    opacity: 1;
+}
+.firstimg:hover img{
+    transform: scale(1.5);
 }
