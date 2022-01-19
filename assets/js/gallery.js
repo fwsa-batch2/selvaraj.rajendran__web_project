@@ -1,5 +1,5 @@
 
-image_array = [
+let image_array = [
     'acc.jpg',
     'cobi.webp',
     'flye.jpg',
@@ -7,9 +7,9 @@ image_array = [
   ]
   
   function randomimage(){
-    random_index = Math.floor(Math.random() * image_array.length);
+    let random_index = Math.floor(Math.random() * image_array.length);
     console.log(random_index);
-    selected_image = image_array[random_index];
+   let selected_image = image_array[random_index];
     console.log(selected_image);
   
     document.getElementById('imageview').src = `./../assets/images/${selected_image}`

@@ -16,10 +16,10 @@ function submitHandler() {
     if (customerDetail != null) {
 
         console.log(customerDetail)
-        len = customerDetail.length;
+       let len = customerDetail.length;
 
        let userExist =  false;
-        for (i = 0; i < len; i++) {
+        for (let i = 0; i < len; i++) {
             let mail = customerDetail[i].email;
             let pass = customerDetail[i].password;
 
@@ -50,13 +50,6 @@ function submitHandler() {
         alert("invalid user")
     }
 
-}
-
-
-function  loginData(){
-
-
-    let loginDetail =  JSON.parse(localStorage.getItem("customerList"));
 }
 
 
