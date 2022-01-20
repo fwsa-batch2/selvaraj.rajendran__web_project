@@ -26,6 +26,7 @@ header{
     align-items: center;
     justify-content:space-between;
     z-index: 110;
+    transition: 0.3s;
 }
 .logo{
     pointer-events: none;
@@ -165,6 +166,10 @@ header{
      color: orange;
      
      
+ }
+ .nav-hidden{
+     transform: translateY(-60px);
+
  }
  
 
@@ -414,6 +419,7 @@ opacity: 0;
     width: 100%;
     height: 450px;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     overflow: scroll;
 

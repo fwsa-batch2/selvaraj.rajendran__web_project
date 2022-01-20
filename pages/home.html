@@ -10,7 +10,7 @@
     <title>Home</title>
 </head>
 <body>
-   <header>
+   <header class="header">
        <div class="logo"> 
    <a href=""> <img src="./../assets/images/logo1.png" alt="logo" height="60"></a>
 </div>
@@ -201,9 +201,12 @@
                 <button> Add to cart</button>
                </div>
             </div>
-         
-        
+      </div>
+  </section>
 
+  <section class="card-container">
+      <div class="card1">
+          
       </div>
   </section>
 
@@ -250,6 +253,29 @@
                 </ul>
             </div>
         </div>
+
+
+
+        <script>
+            //Enable hidden nav bar
+            {
+
+            const navBar = document.querySelector(".header"); 
+            let lastScrollY = window.scrollY;
+            window.addEventListener("scroll" , () => {
+                if( lastScrollY < window.scrollY){
+                  console.log("we are going down");
+                  navBar.classList.add("nav-hidden")
+                }
+                    else{
+                        console.log("we are going up");
+                        navBar.classList.remove("nav-hidden")
+                    }
+
+                    lastScrollY = window.scrollY;
+            });
+            }
+         </script>
     </body>
         <footer class="bottomcredits">
              2022 &#169; Orangecycles by <span style="color: orange;"> selva</span>
