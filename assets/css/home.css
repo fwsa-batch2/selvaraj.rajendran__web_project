@@ -25,7 +25,7 @@ header{
     display: flex;
     align-items: center;
     justify-content:space-between;
-    z-index: 100;
+    z-index: 110;
 }
 .logo{
     pointer-events: none;
@@ -136,6 +136,38 @@ header{
     transition: 1s;
  }
 
+ .second_menu{
+     background-color: transparent;
+     width: 100%;
+     position: absolute;
+     z-index: 100;
+     margin-top: 60px;
+ }
+ .downmenu{
+     display: inline-flex;
+     float: right;
+     color: white;
+     border:orange 2px solid;
+     border-top: 0%;
+     border-bottom-left-radius: 40px;
+     background-color: black;
+ }
+ .downmenu li a{
+     color: white;
+     padding: 5px 10px;
+     padding-left: 20px;
+     font-size: 1em;
+     text-transform: capitalize;
+     font-weight:500;
+    
+ }
+ .downmenu li a:hover{
+     color: orange;
+     
+     
+ }
+ 
+
 /* <-----------------------.mainfooter---------------------> */
 
  .mainfooter{
@@ -163,7 +195,7 @@ header{
 }
 
 .About::after,
-.follow::after,
+.Follow::after,
 .info::after{
     content: '';
     width: 0%;
@@ -175,7 +207,7 @@ header{
     top: 10px;
 }
 .About:hover::after,
-.follow:hover::after,
+.Follow:hover::after,
 .info:hover::after{
     width: 100%;
 }
@@ -247,7 +279,7 @@ header{
 }
 .shopbox .firstimg{
     border-radius: 10px;
-    margin: 20px;
+    margin: 40px;
     margin-bottom: 30px;
     position: relative;
     overflow: hidden;
@@ -322,6 +354,175 @@ opacity: 0;
 .firstimg h2{
     opacity: 1;
 }
+.firstimg img{
+    transition: 1s;
+}
 .firstimg:hover img{
     transform: scale(1.5);
+    transition: 1s;
+}
+
+/* <------------------------------------section 3 --------------------------------------> */
+.Recent_Products{
+    width: 90%;
+    background-color: white; 
+    height: 600PX;
+    position: relative;
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 10px orange double;
+    
+}
+.Recent_Products h1{
+    padding: 10px;
+    color: #3c3c3c ;
+    font-size: 2em;
+    font-weight:600;
+   
+}
+.recentholder{
+    display: inline-flex;
+    width: 100%;
+
+   
+}
+.recentholder .arrows{
+    padding: 10px;
+    
+}
+.recentholder .arrows button{
+   background-color: white;
+   font-size: 2em; 
+   background: transparent;
+   color: #3c3c3c;
+   font-weight: 900;
+   border: transparent;
+   border-radius: 80px;
+   padding-right: 10px;
+   padding-left: 10px;
+   background-color: rgb(252, 193, 85);
+   transition: 1s;
+
+}
+.recentholder .arrows button:hover{
+    color: white;
+    background-color: black ;
+    transition: 0.5s;
+}
+.products_holder{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: scroll;
+
+}
+.holder1{
+    display: grid;
+    box-sizing: border-box;
+    margin-left: 30px;
+    width: 250px;
+    border: 5px #383838 ridge;
+    overflow: hidden;
+    background: white;
+    margin-top: 10px;
+
+
+}
+.imageholder{
+    width: 220px;
+    height: 220px;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+}
+.imageholder:hover img{
+    filter: blur(2px);
+}
+.imagelayer{
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s; 
+    text-align: center;
+    box-sizing: border-box;
+}
+.imagelayer ul{
+    display: flex;
+    width: 100%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    text-transform: capitalize;
+    opacity: 0;
+    margin: 40px;
+    margin-bottom: 0%;
+    transition: 1s;
+
+}
+
+.imagelayer ul li  a{
+    color: white;
+    z-index: 200;
+    display: block;
+    font-size: 1.5em;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: black;
+    margin: 10px;
+    border-radius: 30px;
+    transition: .5s;
+}
+.imagelayer ul li a:hover{
+    color: black;
+    background-color: orange;
+    transform: translateY(5px);
+    transition: .5s;
+}
+.imageholder:hover .imagelayer ul{
+    bottom: 35%;
+    opacity: 1;
+    transition: .5s;
+}
+.infoholder{
+    display: grid;
+    width: 80%;
+    margin: 10%;
+    margin-top: 0%;
+}
+.holder1:hover .infoholder{
+    transform: scale(1.1);
+    transition: .1s;
+    background-color:;
+}
+.infoholder p{
+    font-size: 1em;
+    font-weight: 400;
+    padding: 2px;
+    color: black;
+    text-transform: capitalize;
+}
+.infoholder p span{
+    color: gold;
+}
+.infoholder button{
+    background-color: #3c3c3c;
+    color: white;
+    border: 2px black solid;
+    margin-bottom: 5px;
+    font-weight: 200;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 2px;
+}
+.infoholder button:hover{
+    background-color: orange;
+    color: black;
 }

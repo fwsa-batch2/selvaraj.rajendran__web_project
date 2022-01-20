@@ -28,7 +28,7 @@ header{
     z-index: 100;
 }
 .logo{
-    pointer-events: none;
+    pointer-events: pointer;
 }
 .topnav{
     position: absolute;
