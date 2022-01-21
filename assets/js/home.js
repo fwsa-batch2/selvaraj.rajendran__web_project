@@ -3,10 +3,22 @@
 {
     const navBar = document.querySelector(".header"); 
     let lastScrollY = window.scrollY;
+    const searchBtn = document.querySelector(".search-btn");
+    const searchBox = document.querySelector(".search-box");
+    const searchInput = document.querySelector(".search-input");
+    const cancelBtn = document.querySelector(".cancel");
+    const searchData = document.querySelector(".search-data");
+
     window.addEventListener("scroll" , () => {
         if( lastScrollY < window.scrollY){
           console.log("we are going down");
           navBar.classList.add("nav-hidden");
+          searchBox.classList.remove("active");
+          searchInput.classList.remove("active");
+          searchBtn.classList.remove("active");
+          cancelBtn.classList.remove("active");
+          searchData.classList.add("active");
+          searchInput.value = "";
         }
             else{
                 console.log("we are going up");
