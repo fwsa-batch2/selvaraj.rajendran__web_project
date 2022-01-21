@@ -304,7 +304,6 @@ header{
     display: block;
     margin: auto;
     transition: .5s;
-    top: 10px;
 }
 .About:hover::after,
 .Follow:hover::after,
@@ -427,6 +426,7 @@ header{
     position: absolute;
     text-transform: capitalize;
     opacity: 0;
+
 
 }
 .layer a{
@@ -736,6 +736,7 @@ opacity: 0;
     width: 100%;
     height: 85px;
     background-color: #545454;
+    border: 1px orange double;
     position: relative;
     margin: 30px;
 }
