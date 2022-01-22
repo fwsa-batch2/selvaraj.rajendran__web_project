@@ -275,6 +275,7 @@ header{
      display: flex;
      padding: 20px;
      box-sizing: border-box;
+     margin-top: 20px;
  }
  .mainfooter span{
      color: orange;
@@ -768,3 +769,187 @@ opacity: 0;
     height: 70px;
     width: 80px;
 }
+/* <------------------------------------------------------ section-5 review section ------------------------------------------------------> */
+
+.review-head{
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px; ;
+    font-size: 3em;
+    text-transform: capitalize ;
+}
+.review-holder{
+    height: 300px;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    background: url(./../images/banc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    background-position:center ;
+    align-items: center;
+    justify-content: center;
+}
+
+.review-container{
+    height: 80%;
+    width: 90%;
+    margin: 20px 40px 20px 40px;
+    background-color: transparent;
+    filter: none;
+    z-index: 2;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.review-image{
+    height: 150px;
+    width: 150px;
+    position: sticky;
+   
+}
+.review-holder .review-image img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 200px;
+    border: 2px solid orange;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateX(-150%);
+}
+.review-holder .review-text{
+    height: 200px;
+    width: 600px;
+    display: grid;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    background-color: white;  
+    border: 5px solid black ;
+    border-right: 5px orange double;
+    border-bottom: 5px orange double;
+    z-index: 2;
+    pointer-events: none;
+    opacity: 0;
+    transform: translateX(-150%);
+    transition: 0.5s;
+   }
+
+.review-text p{
+    font-weight: 500px;
+    padding: 10px;
+    max-width: 100%;
+    max-height: 100%;
+}
+.review-text  h1{
+    font-size: 2em;
+    text-align: right;
+    margin-right:20px;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+    
+}
+.review-holder:hover .review-image img{
+    margin-left: 50px;
+    transition: 0.8s;
+    opacity: 1;
+    transform: translateX(0);
+
+}
+.review-holder:hover .review-text{
+    opacity: 1;
+    transform: translateX(0);
+    transition: 0.5s;
+}
+.review-holder:hover .review-btn{
+    right: 0;
+    opacity: 1;
+}
+.review-holder:hover .review-subject{
+    opacity: 0;
+}
+.review-btn {
+     padding: 2px 10px;
+     position: absolute;
+     font-size: 1.5em;
+     background-color: transparent;
+     border: 2px solid black;
+     opacity: 0;
+    
+    }
+    .review-btn:hover{
+        background-color: black;
+        color: orange;
+        border: 2px solid orange;
+    }
+    .review-subject{
+        position: absolute;
+        border: 5px double orange;
+        background-color: rgba(20, 20, 30, 0.7);
+    }
+    .review-subject h1{
+        color:white;
+         text-align: center;
+         text-transform: capitalize;
+         padding: 10px;
+    }
+   /* <-------------------------------------------------section 6 news -----------------------------------------------------> */
+   .news-letter{
+       width: 80%;
+       margin: 5% 10% 5% 10%;
+       height: 100px;
+       border: 10px double black;
+   }
+   .news-holder{
+       max-height: 100%;
+       max-width: 100% ;
+       display: inline-flex;
+       flex-direction: row;
+       padding: 10px 0px 10px 10px;
+   }
+   .news-holder em{
+       font-size: 4em;
+       color: orange;
+       border: 1px solid grey;
+   }
+   .news-letter h1{
+       padding: 2px 10px;
+       letter-spacing: -1px;
+   }
+   .news-letter{
+       padding: 0 10px;
+   }
+   .news-letter p{
+       padding: 0 10px;
+       font-weight: 300px;
+       text-transform: capitalize;
+   }
+   .news-holder form{
+    display: flex;
+    flex-direction: row;
+    padding: 2px 20px;
+   }
+   .news-holder form input{
+       margin: 5px 10px 5px 0px;
+       height: 40px;
+       outline: none;
+       border: none;
+       padding: 10px;
+       background-color: rgb(213, 205, 205);
+       
+   }
+   .news-holder form button{
+       height: 40px;
+       background-color: orange;
+       padding: 5px;
+       margin: 5px 0px 5px 0px;
+       border: none;
+       opacity: 0.7;
+   }
+   .news-holder form button:hover{
+       opacity: 1;
+   }

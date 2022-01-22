@@ -3,11 +3,6 @@
 {
     const navBar = document.querySelector(".header"); 
     let lastScrollY = window.scrollY;
-    const searchBtn = document.querySelector(".search-btn");
-    const searchBox = document.querySelector(".search-box");
-    const searchInput = document.querySelector(".search-input");
-    const cancelBtn = document.querySelector(".cancel");
-    const searchData = document.querySelector(".search-data");
 
     window.addEventListener("scroll" , () => {
         if( lastScrollY < window.scrollY){
@@ -30,13 +25,14 @@
     }
 
     //search button and 
-    {
-        const searchBtn = document.querySelector(".search-btn");
-        const searchBox = document.querySelector(".search-box");
-        const searchInput = document.querySelector(".search-input");
-        const cancelBtn = document.querySelector(".cancel");
-        const searchData = document.querySelector(".search-data");
 
+    const searchBtn = document.querySelector(".search-btn");
+    const searchBox = document.querySelector(".search-box");
+    const searchInput = document.querySelector(".search-input");
+    const cancelBtn = document.querySelector(".cancel");
+    const searchData = document.querySelector(".search-data");
+
+    {
         searchBtn.onclick = () =>{
             searchBox.classList.add("active");
             searchInput.classList.add("active");
