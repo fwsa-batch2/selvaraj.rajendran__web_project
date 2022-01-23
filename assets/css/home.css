@@ -882,7 +882,6 @@ opacity: 0;
     
     }
     .review-btn:hover{
-        background-color: black;
         color: orange;
         border: 2px solid orange;
     }

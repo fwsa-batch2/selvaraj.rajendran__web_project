@@ -10,38 +10,279 @@
     <title>Gallery</title>
 </head>
 <body>
-   <header>
-       <div class="logo">
-   <a href="./home.html"> <img src="./../assets/images/logo1.png" alt="logo" height="60"></a>
-</div>
-    <div class="topnav"></div>
-    <ul class="mainmenu">
-        <li><a href="./home.html"> Home   </a></li>
-        <li><a href="#"> Shop   </a></li>
-        <li><a href="./bikes.html"> Bikes   </a></li>
-        <li><a href="#"  class="active"> Gallery   </a></li>
-        <li><a href="#"> About us   </a></li>
-    </ul>
-    <ul class="sidemenu">
-    <li><a href="#"><em class='bx bx-search'></em> </a></li>
-    <li><a href="#"> <em class='bx bxs-cart-alt'></em></a></li>
-    <li><a href="#"><em class='bx bxs-user-circle'></em></a></li>
-    <li><a href="#"> <em class='bx bx-shuffle'></em></a></li>
-    </ul>
-   </header>
+   
 
-   <section class="gallery">
-       <div id="container">
-           <div id="inner_container">
-               <img id="imageview" class="imgholder" height="500px" width="100%" alt="random images"/>
-               <div id="button_container">
-                   <button  onclick="randomimage()"> next </button>
-               </div>
-           </div>
-       </div>
-   </section>
+
+
+
+
+    <header class="header">
+        <div class="logo"> 
+    <a href=""> <img src="./../assets/images/logo1.png" alt="logo" height="60"></a>
+ </div>
+     <div class="topnav"></div>  
+     <ul class="mainmenu">
+         <li><a href="./home.html" > Home   </a></li>
+         <li><a href="#"> Shop   </a></li>
+         <li><a href="./bikes.html"> Bikes   </a></li>
+         <li><a href="#" class="active"> Gallery   </a></li>
+         <li><a href="#"> about us</a></li>
+     </ul>
+     <ul class="sidemenu">
+     <li>
+         <div class="search-box">
+             <input class="search-input" type="text" placeholder="Type to search">
+             <div class="search-btn">
+                 <em class='bx bx-search'></em>
+             </div>
+             <div class="cancel">
+                 <em class='bx bx-x'></em>
+             </div>
+             <div class="search-data">
+                 <img src="" alt="">
+             </div>
+         </div>
+         
+     </li>
+     <li><a href="#"> <em class='bx bxs-cart-alt'></em></a></li>
+     <li><a href="#"><em class='bx bxs-user-circle'></em></a></li>
+     <li><a href="#"> <em class='bx bx-shuffle'></em></a></li>
+     </ul>
+    </header>
+    <section class="second_menu">
+     
+  <ul class="downmenu">
+  <li><a href="./register.html"> Register </a></li>
+  <li><a href="./login.html"> login</a></li>
+  </ul>
+ </section>
+
+
+
+ <div  class="banner">
+     <img id="bgimg" src="./../assets/images/g2.jpg" alt="background">
+          <h1> Gallery</h1>
+     
+    
+ </div>
+ <div class="btn-holder">
+    <button class="btn1" onclick="btn('all')"> All </button>
+    <button class="btn2" onclick="btn('bike')"> BIKES </button>
+    <button  class="btn-3" onclick="btn('ride')"> RIDING </button>
+    <button class="btn-4" onclick="btn('inim')"> INSPIRATION </button>
+    <button class="btn-5"onclick="btn('work')" > WORKSPACE </button>
+</div>
+
+<section class="image-container" >
+
+    <div class="img-box" id="bikes">
+        <div class="imageholder" >
+            <img src="./../assets/images/bike1.avif" alt="bike">
+            <div class="layer">
+                <h1>Bikes</h1>
+                <p> shared by ACE</p>
+                <button class="view-btn"> QUICKVIEW </button>
+            </div>
+        </div>
+
+        <div class="imageholder" >
+            <img src="./../assets/images/bikes2.jpg" alt="bike">
+            <div class="layer">
+                <h1>Bikes</h1>
+                <p> shared by ACE</p>
+                <button class="view-btn"> QUICKVIEW </button>
+            </div>
+        </div>
+
+        <div class="imageholder" >
+            <img src="./../assets/images/bikes3.avif" alt="bike">
+            <div class="layer">
+                <h1>Bikes</h1>
+                <p> shared by ACE</p>
+                <button class="view-btn"> QUICKVIEW </button>
+            </div>
+        </div>
+        <div class="imageholder" >
+            <img src="./../assets/images/bikes3.jpg" alt="bike">
+            <div class="layer">
+                <h1>Bikes</h1>
+                <p> shared by ACE</p>
+                <button class="view-btn"> QUICKVIEW </button>
+            </div>
+        </div>
+        <div class="imageholder" >
+            <img src="./../assets/images/bikes4.jpg" alt="bike">
+            <div class="layer">
+                <h1>Bikes</h1>
+                <p> shared by ACE</p>
+                <button class="view-btn"> QUICKVIEW </button>
+            </div>
+        </div>
+        <div class="imageholder" >
+            <img src="./../assets/images/bikes5.jpg" alt="bike">
+            <div class="layer">
+                <h1>Bikes</h1>
+                <p> shared by ACE</p>
+                <button class="view-btn"> QUICKVIEW </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="img-box" id="Ride">
+        <div class="imageholder" >
+            <img src="./../assets/images/r1.jpg" alt="bike">
+            <div class="layer">
+                <h1>Bikes</h1>
+                <p> shared by ACE</p>
+                <button class="view-btn"> QUICKVIEW </button>
+            </div>
+        </div>
+
+        <div class="imageholder" >
+            <img src="./../assets/images/r2.jpg" alt="bike">
+            <div class="layer">
+                <h1>Bikes</h1>
+                <p> shared by ACE</p>
+                <button class="view-btn"> QUICKVIEW </button>
+            </div>
+        </div>
+
+        <div class="imageholder" >
+            <img src="./../assets/images/r3.avif" alt="bike">
+            <div class="layer">
+                <h1>Bikes</h1>
+                <p> shared by ACE</p>
+                <button class="view-btn"> QUICKVIEW </button>
+            </div>
+        </div>
+        <div class="imageholder" >
+            <img src="./../assets/images/r4.jpg" alt="bike">
+            <div class="layer">
+                <h1>Bikes</h1>
+                <p> shared by ACE</p>
+                <button class="view-btn"> QUICKVIEW </button>
+            </div>
+        </div>
+        <div class="imageholder" >
+            <img src="./../assets/images/r5.jpg" alt="bike">
+            <div class="layer">
+                <h1>Bikes</h1>
+                <p> shared by ACE</p>
+                <button class="view-btn"> QUICKVIEW </button>
+            </div>
+        </div>
+        <div class="imageholder" >
+            <img src="./../assets/images/bikes5.jpg" alt="bike">
+            <div class="layer">
+                <h1>Bikes</h1>
+                <p> shared by ACE</p>
+                <button class="view-btn"> QUICKVIEW </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="img-box" id="inim">
+        <div class="imageholder" >
+            <img src="./../assets/images/in1.jpg" alt="bike">
+            <div class="layer">
+                <h1>Bikes</h1>
+                <p> shared by ACE</p>
+                <button class="view-btn"> QUICKVIEW </button>
+            </div>
+        </div>
+
+        <div class="imageholder" >
+            <img src="./../assets/images/in2.jpg" alt="bike">
+            <div class="layer">
+                <h1>Bikes</h1>
+                <p> shared by ACE</p>
+                <button class="view-btn"> QUICKVIEW </button>
+            </div>
+        </div>
+
+        <div class="imageholder" >
+            <img src="./../assets/images/in3.jpg" alt="bike">
+            <div class="layer">
+                <h1>Bikes</h1>
+                <p> shared by ACE</p>
+                <button class="view-btn"> QUICKVIEW </button>
+            </div>
+        </div>
+        <div class="imageholder" >
+            <img src="./../assets/images/in4.jpg" alt="bike">
+            <div class="layer">
+                <h1>Bikes</h1>
+                <p> shared by ACE</p>
+                <button class="view-btn"> QUICKVIEW </button>
+            </div>
+        </div>
+        <div class="imageholder" >
+            <img src="./../assets/images/in5.jpg" alt="bike">
+            <div class="layer">
+                <h1>Bikes</h1>
+                <p> shared by ACE</p>
+                <button class="view-btn"> QUICKVIEW </button>
+            </div>
+        </div>
+        <div class="imageholder" >
+            <img src="./../assets/images/background.jpg" alt="bike">
+            <div class="layer">
+                <h1>Bikes</h1>
+                <p> shared by ACE</p>
+                <button class="view-btn"> QUICKVIEW </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="img-box" id="works">
+        <div class="imageholder" >
+            <img src="./../assets/images/w1.jpg" alt="bike">
+            <div class="layer">
+                <h1>Bikes</h1>
+                <p> shared by ACE</p>
+                <button class="view-btn"> QUICKVIEW </button>
+            </div>
+        </div>
+
+        <div class="imageholder" >
+            <img src="./../assets/images/w2.avif" alt="bike">
+            <div class="layer">
+                <h1>Bikes</h1>
+                <p> shared by ACE</p>
+                <button class="view-btn"> QUICKVIEW </button>
+            </div>
+        </div>
+
+        <div class="imageholder" >
+            <img src="./../assets/images/w3.avif" alt="bike">
+            <div class="layer">
+                <h1>Bikes</h1>
+                <p> shared by ACE</p>
+                <button class="view-btn"> QUICKVIEW </button>
+            </div>
+        </div>
+        <div class="imageholder" >
+            <img src="./../assets/images/w4.avif" alt="bike">
+            <div class="layer">
+                <h1>Bikes</h1>
+                <p> shared by ACE</p>
+                <button class="view-btn"> QUICKVIEW </button>
+            </div>
+        </div>
+
+   
+    </div>
+
+</section>
+
+
+<button  onclick="randomimage()"> next </button>
+<img id="imageview" src="" alt="image" height="100px" width="100px"> 
+
+
 
 <script src="./../assets/js/gallery.js"></script>
+<script src="./../assets/js/home.js"></script>
 </body>
 <footer>
        <div class="mainfooter">
