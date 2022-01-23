@@ -80,12 +80,14 @@ header{
 }
 .mainpage{
     background-color: white;
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     color: black; 
 }
 .box{
     background-image: url(./../images/background.jpg);
+    background-size: cover;
+    background-position: center;
     background-size: cover;
     min-height: 800px;
     width: 100%;
@@ -94,6 +96,7 @@ header{
     justify-content: flex-end;
     padding: 30px;
 }
+
 .box .content {
    display: grid;
    margin-top: 100px;
@@ -141,7 +144,7 @@ header{
      width: 100%;
      position: absolute;
      z-index: 100;
-     margin-top: 30px;
+     margin-top: 60px;
  }
  .downmenu{
      display: inline-flex;
@@ -265,250 +268,3 @@ header{
  .search-data.active img{
      display: none;
  }
-
-/* <-------------------------------------------------------section1 navbar ------------------------------> */
-
-.mainfooter{
-    background-color: #545454;
-    display: flex;
-    padding: 20px;
-    box-sizing: border-box;
-}
-.mainfooter span{
-    color: orange;
-    font-size: 1.5em;
-    text-decoration: capitalize;
-}
-.mainfooter span::after{
-   content: '';
-   width: 0%;
-   height: 2px;
-   background: orange;
-   display: block;
-   margin: auto;
-   transition: .5s;
-}
-.mainfooter span:hover::after{
-   width: 100%;
-}
-
-.About,
-.Follow,
-.info{
-    margin-left: 50px;
-    font-size: 20px;
-}
-.About::after,
-.follow::after,
-.info::after{
-    content: '';
-    width: 0%;
-    height: 2px;
-    background: orange;
-    display: block;
-    margin: auto;
-    transition: .5s;
-    top: 10px; 
-}
-.About:hover::after,
-.follow:hover::after,
-.info:hover::after{
-    width: 100%;
-}
-.mainfooter ul li {
-    font-size: 15px;
-    margin: 10px;
-    padding: 10px;
-    transition: 2s;
-}
-.mainfooter .About ul li:hover{
-    pointer-events: none;
-    color: black;
-}
-.mainfooter ul li:hover{
-    color: orange;
-    transition: 1s;
-}
-.mainfooter ul li em{
-    font-size: 30px;
-}
-.mainfooter .facebook em{
-    color:blue;
-}
-.mainfooter .instagram em{
-    color: #cd486b;
-
-}
-.mainfooter .twitter em{
-    color: #00acee;
-}
-.bottomcredits{
-    color: black;
-    background-color: #383838;
-    text-align: center;
-    font-weight: 500;
-}
-
-/* <----------------------------------------------------footerends-----------------------------------> */
-.banner button{
-    z-index: 200;
-    pointer-events:cursor;
-}
-
-
-
-/* <-------------------------------------------------section1--------------------------------------> */
-.banner{
-    height: 300px;
-    width: 100%;
-    margin-top: 30px;
-    position: relative;
-    margin-bottom: 50px;
-    background-image: url(./../images/ocsec1.jpg);
-    background-size: cover;
-    text-align: center;
-    justify-content: center;
-    overflow: hidden;
-}
-.banner img{
-    position: absolute;
-    width: 1400px;
-    top: 0;
-    left: 0;
-    transition: 1s;
-}
-.banner h1{
-    font-size: 80px;
-    z-index: 100;    
-    transform: translate(-500px, 206px);
-    font-weight: 300;
-}
-.btn-holder{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 70px;
-    text-align: center;
-    border-top: 1px solid grey;
-    border-bottom: 1px solid grey;
-}
-.btn-holder button{
-    height: 70px;
-    width: 150px;
-    border: 1px solid grey;
-    font-weight: 300;
-    background-color: transparent;
-    
-}
-.btn-holder button:hover{
-    color: orange;
-    background-color: rgb(220, 220, 220);
-    font-size: 1em;
-}
-.btn1{
-    margin-left: 200px;
-}
-.image-container{
-    width: 80%;
-    height: 100%;
-        margin-left: 10%;
-        margin-right: 10%;
-    background-color:white;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap ;
-}
-.img-box{
-    width: 100%;
-    height: 100%;
-    background-color:white;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap ;
-
-}
-.imageholder{
-    height: 300px;
-    width: 300px;
-    position: relative;
-    padding: 20px;
-    z-index: 20;
-    overflow: hidden;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.imageholder img{
-    max-height: 100%;
-    max-width: 100%;
-    transition: .5s;
-}
-.imageholder .layer{
-    height: 100%;
-    width: 100%;
-    background-color: transparent;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    text-align: center;
-    justify-content: center;
-    padding: 30px;
-    opacity: 0;
-    transform: scale(0.1);
-}
-.imageholder .layer h1{
-    font-size: 2em;
-    color: white;
-}
-.imageholder .layer p{
-    font-size: 1em;
-    font-weight: 300;
-    color: orange;
-}
-.view-btn{
-    color: white;
-    background-color: transparent;
-    font-size: 1.2em;
-    margin-top: 30px;
-    padding: 10px 20px;
-    border: 1px solid orange;
-    border-radius: 40px; 
-}
-.view-btn:hover{
-    background-color: white;
-    color: black;
-    z-index: 30;
-    border: 1px solid black;
-}
-.imageholder:hover img{
-    transform: scale(4);
-    transition: .5s;
-}
-.imageholder:hover .layer{
-    opacity: 1;
-    transform: scale(0.8);
-    transition: .5s;
-    background-color:rgba(20, 20, 30, 0.7);
-}
-
-/* <-----------------------------------------------js ative----------------------------------------------> *
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

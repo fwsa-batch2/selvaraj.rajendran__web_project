@@ -82,12 +82,14 @@ header{
 }
 .mainpage{
     background-color: white;
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     color: black; 
 }
 .box{
     background-image: url(./../images/background.jpg);
+    background-size: cover;
+    background-position: center;
     background-size: cover;
     min-height: 800px;
     width: 100%;
@@ -96,6 +98,7 @@ header{
     justify-content: flex-end;
     padding: 30px;
 }
+
 .box .content {
    display: grid;
    margin-top: 100px;
@@ -774,7 +777,7 @@ opacity: 0;
 .review-head{
     text-align: center;
     padding: 20px;
-    margin-top: 50px; ;
+    margin-top: 50px;
     font-size: 3em;
     text-transform: capitalize ;
 }
@@ -902,6 +905,7 @@ opacity: 0;
        margin: 5% 10% 5% 10%;
        height: 100px;
        border: 10px double black;
+       padding: 0 10px;
    }
    .news-holder{
        max-height: 100%;
@@ -919,9 +923,7 @@ opacity: 0;
        padding: 2px 10px;
        letter-spacing: -1px;
    }
-   .news-letter{
-       padding: 0 10px;
-   }
+  
    .news-letter p{
        padding: 0 10px;
        font-weight: 300px;

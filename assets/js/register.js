@@ -11,7 +11,7 @@ function onpageLoad(){
 }
 onpageLoad();
 
-function getdata() {
+function getdata(event) {
   console.group("getdata");
   event.preventDefault();
   let username = document.getElementById("NAME").value;
@@ -42,7 +42,7 @@ function getdata() {
   if (isMatch) {
     selva.push(customerDetail);
     let detailInString = JSON.stringify(selva);
-    let ab = localStorage.setItem("customerList", detailInString);
+    localStorage.setItem("customerList", detailInString);
     console.log("passwords matched");
     window.location.href = "login.html"
   } else {
@@ -81,7 +81,6 @@ console.group("passwordChecking");
     isMatch = true;
     console.log("password matched");
   } else {
-    isMatch = false;
     console.log("password mismatch");
 
   }
@@ -91,10 +90,10 @@ console.group("passwordChecking");
 }
 
 function clr() {
-  let username = document.getElementById("NAME").value = ""
-  let email = document.getElementById("mail").value = ""
-  let password = document.getElementById("password").value = ""
-  let confirmPassword = document.getElementById("Confirmpass").value = ""
+  document.getElementById("NAME").value = ""
+  document.getElementById("mail").value = ""
+  document.getElementById("password").value = ""
+    document.getElementById("Confirmpass").value = ""
 }
 
 function pasclr() {
@@ -126,12 +125,9 @@ console.group("mailChcking");
 
   let isExist = false;
 
-  for (let i = 0; i < selva.length; i++) {                 // i = 0 length
-    const data1 = selva[i];
+  for (let i of selva) {                 // i = 0 length
     
-    console.log(data1)
-    
-    const checkemail = data1.email;
+    const checkemail = i.email;
 
     console.log(checkemail)
 
