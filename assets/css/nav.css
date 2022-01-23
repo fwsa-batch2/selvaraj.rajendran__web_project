@@ -88,7 +88,6 @@ header{
     background-image: url(./../images/background.jpg);
     background-size: cover;
     background-position: center;
-    background-size: cover;
     min-height: 800px;
     width: 100%;
     display: flex;
