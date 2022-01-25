@@ -1,4 +1,4 @@
-
+// random images in background
 let image_array = [
     'g2.jpg',
     'g3.jpg',
@@ -20,7 +20,7 @@ let image_array = [
     
   }
 
-  setInterval(randomimage,  1200)
+  setInterval(randomimage,  2000)
 
 
   function onpageload(){
@@ -30,6 +30,7 @@ let image_array = [
   
   onpageload();
 
+// filter 
 
 function btn(x){
 
@@ -42,7 +43,7 @@ function btn(x){
            
         }
         else if( x == "bike"){
-          document.getElementById("bikes").style.display = "block";
+          document.getElementById("bikes").style.display = "";
             document.getElementById("Ride").style.display = "none";
             document.getElementById("inim").style.display = "none";
             document.getElementById("works").style.display = "none";
@@ -51,7 +52,7 @@ function btn(x){
         }
         else if( x == "ride"){
           document.getElementById("bikes").style.display = "none";
-            document.getElementById("Ride").style.display = "block";
+            document.getElementById("Ride").style.display = "";
             document.getElementById("inim").style.display = "none";
             document.getElementById("works").style.display = "none";
             document.getElementById("friend").style.display = "none";
@@ -61,7 +62,7 @@ function btn(x){
         else if( x == "inim"){
           document.getElementById("bikes").style.display = "none";
             document.getElementById("Ride").style.display = "none";
-            document.getElementById("inim").style.display = "block";
+            document.getElementById("inim").style.display = "";
             document.getElementById("works").style.display = "none";
             document.getElementById("friend").style.display = "none";
             console.log('nim');
@@ -71,7 +72,7 @@ function btn(x){
           document.getElementById("bikes").style.display = "none";
             document.getElementById("Ride").style.display = "none";
             document.getElementById("inim").style.display = "none";
-            document.getElementById("works").style.display = "block";
+            document.getElementById("works").style.display = "";
             document.getElementById("fri").style.display = "none";
             console.log('work');
 

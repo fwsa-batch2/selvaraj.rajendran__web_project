@@ -1,3 +1,4 @@
+//list data
 let cycleDataList ="";
 
 let bikes = JSON.parse(localStorage.getItem("cycleList"));

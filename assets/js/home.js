@@ -1,5 +1,5 @@
 
-// navbar hiding while scrolling
+// navbar hiding while scrolling and  closing search while scrolling
 {
     const navBar = document.querySelector(".header"); 
     let lastScrollY = window.scrollY;
@@ -24,7 +24,7 @@
     });
     }
 
-    //search button and 
+    //search button 
 
     const searchBtn = document.querySelector(".search-btn");
     const searchBox = document.querySelector(".search-box");
@@ -43,8 +43,7 @@
                 let values = searchInput.value;
                 searchData.classList.remove("active");
                 searchData.innerHTML = "<img src='./../assets/images/oso.gif' alt='orange' height='100px' width='100px'>"  + "Sorry, there were no results for " + "&quot;" + values + "&quot;";
-
-            }else{
+            } else{
                 searchData.innerHTML = ""
             }
         }
