@@ -20,7 +20,7 @@ for(let i of bikes){
                  ${bicycleType}
             </p>
             <p>
-                 &#x20A8; ${bicyclePrice}/-only
+                RS.${bicyclePrice}/-only
             </p>
         </div>
     </div>
