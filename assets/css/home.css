@@ -473,7 +473,7 @@ opacity: 0;
     transition: 1s;
 }
 .firstimg:hover img{
-    transform: scale(1.5);
+    transform:scale(1.5);
     transition: 1s;
 }
 
